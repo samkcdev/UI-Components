@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabbed Panel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="tabs">
+        <li><a href="#first-btn" class="tab active-tab">First</a></li>
+        <li><a href="#second-btn" class="tab">Second</a></li>
+        <li><a href="#third-btn" class="tab">Third</a></li>
+      </ul>
+      <!-- first -->
+      <div id="first-btn" class="panel-content open">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam
+          molestiae, dicta consequatur impedit quia ipsum dolorum itaque beatae
+          atque odit magni ipsa at porro, perspiciatis exercitationem ad error
+          accusamus!
+        </p>
+      </div>
+      <!-- second -->
+      <div id="second-btn" class="panel-content closed"><p>lorem ipsum</p></div>
+      <!-- Third -->
+      <div id="third-btn" class="panel-content closed">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
+          illum sunt blanditiis, rem ipsum cumque doloribus provident, deserunt
+          hic cum reprehenderit nam odit explicabo veniam eos quam! Alias,
+          fugiat itaque?
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

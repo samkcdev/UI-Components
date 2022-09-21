@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs li > .tab {
+  background-color: black;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  text-decoration: none;
+}
+
+.tabs li + li {
+  margin-left: 0.2em;
+}
+
+.tabs li > .tab.active-tab {
+  color: #fff;
+  background-color: blueviolet;
+}
+
+.closed {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.panel-content {
+  background: #ccc;
+  padding: 1.2em;
+  border-radius: 0 0 10px 10px;
+}
