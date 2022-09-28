@@ -40,16 +40,17 @@ ul > li {
   background-color: blueviolet;
 }
 
-.closed {
+/* .closed {
   display: none;
-}
-
-.open {
-  display: block;
-}
+} */
 
 .panel-content {
   background: #ccc;
   padding: 1.2em;
   border-radius: 0 0 10px 10px;
+  display: none;
+}
+
+.panel-content.open {
+  display: block;
 }
