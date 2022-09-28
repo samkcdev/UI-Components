@@ -20,21 +20,21 @@ let activePanel = () => {
 
 function operatePanels(e) {
   //find which tab i have clicked on
-
-  let clickedTab = e.srcElement;
-  let activeTab = activetab();
-  let currentactivePanel = activePanel();
+  console.log(e);
+  let selectedTab = e.target;
+  let currentTab = activetab();
+  let currentPanel = activePanel();
 
   panels.forEach((panel) => {
-    if (clickedTab.hash.replace(/[#]/gi, "") === panel.id) {
+    if (selectedTab.hash.replace(/[#]/gi, "") === panel.id) {
       panel.classList.add("open");
-      currentactivePanel.classList.remove("open");
+      currentPanel.classList.remove("open");
     }
   });
 
   //* logic for the tabs
-  activeTab.classList.remove("active-tab");
-  clickedTab.classList.add("active-tab");
+  currentTab.classList.remove("active-tab");
+  selectedTab.classList.add("active-tab");
 }
 
 tabs.forEach((tab) => {
