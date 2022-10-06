@@ -10,9 +10,44 @@ html {
 body {
   position: relative;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80vmax;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.card {
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: beige;
+  margin-top: 1em;
+  display: flex;
+}
+
+.msg {
+  margin-right: 1em;
+}
+
+#modal-btn {
+  display: none;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
 }
 
 .modal-body {
+  background: #fff;
   border: 1px solid #ccc;
   box-shadow: 1px 0 5px 2px rgba(0, 0, 0, 0.8);
   padding: 1.5em;
