@@ -46,22 +46,33 @@ body {
   line-height: 15px;
 }
 
+.modal-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.5s;
+}
+
+.modal-container.open {
+  z-index: 1;
+  opacity: 1;
+}
+
 .modal-body {
   background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 1px 0 5px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
   padding: 1.5em;
   position: absolute;
   z-index: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* display: none; */
 }
-/*
-.modal-body.show {
-  display: block;
-} */
 
 .modal-btn {
   padding: 0.2em 1em;
